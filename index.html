@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Imunologia - Speedrun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Quiz: Imunidade Inata</h2>
+    
+    <div class="counter" id="counterDisplay">Carregando...</div>
+
+    <div class="timer-container">
+        <div id="timerBar" class="timer-bar"></div>
+    </div>
+
+    <div class="card-container">
+        
+        <div id="resultScreen" class="card-face" style="display: none; flex-direction: column; z-index: 10;">
+            <div class="feedback-title" id="finalScoreTitle">Fim do Quiz!</div>
+            <div class="explanation-text" id="finalScoreText" style="margin-bottom: 20px;"></div>
+            <button class="nav-btn" onclick="restartQuiz()" style="max-width: 250px;">Jogar Novamente</button>
+        </div>
+
+        <div class="card" id="flashcard">
+            
+            <div class="card-face card-front">
+                <div class="question-text" id="questionText"></div>
+                <div class="options-container" id="optionsContainer"></div>
+            </div>
+
+            <div class="card-face card-back">
+                <div class="feedback-title" id="feedbackTitle"></div>
+                <div class="explanation-text" id="explanationText"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="controls">
+        <button class="nav-btn" id="btnPrev" onclick="prevCard()">Anterior</button>
+        <button class="nav-btn" id="btnNext" onclick="nextCard()">Próxima</button>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
