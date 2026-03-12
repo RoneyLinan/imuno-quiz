@@ -12,7 +12,7 @@ body {
     -webkit-tap-highlight-color: transparent;
 
     /* --- IMAGEM DE FUNDO --- */
-    background-image: url('fundo.jpg'); 
+    background-image: url('Fundo.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -189,4 +189,5 @@ h2 {
     background-color: #d1d5db;
     color: #9ca3af;
     cursor: not-allowed;
+
 }
